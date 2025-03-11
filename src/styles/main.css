@@ -12,6 +12,7 @@ body {
 }
 
 header, #sidebar {
+  padding-top: 10px;
   padding-left: 30px;
   width: 300px;
   background-color: var(--sidebar-background);
@@ -30,10 +31,6 @@ header, #sidebar {
 .sidebar-filters, .topic-lists {
   display: flex;
   flex-direction: column;
-}
-
-.sidebar-filters {
-  max-width: 180px;
 }
 
 .list-topic {
@@ -100,4 +97,8 @@ hr {
 .list-btn:active {
   background-color: var(--primary-dark);
   transform: scale(0.99);
+}
+
+#add-topic:hover {
+  background-color: rgba(255, 0, 0, 0.1);
 }
