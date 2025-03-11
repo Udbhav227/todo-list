@@ -1,35 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
 * {
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", ui-sans-serif, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 }
 
 body {
   overflow: hidden;
+  background-color: #fff;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 
-header {
-  /* height: 50px; */
-  background-color: antiquewhite;
-  padding: 10px 10px;
+header, #sidebar {
+  padding-left: 30px;
+  width: 300px;
+  background-color: var(--sidebar-background);
 }
 
 #sidebar {
-  background-color: antiquewhite;
-  max-width: 250px;
   min-height: 100vh;
+  /* max-height: 100vh; */
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
   overflow-y: auto;
-  max-height: 100vh;
-  scrollbar-width: thin; 
+  scrollbar-width: thin;
 }
 
 .sidebar-filters, .topic-lists {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-bottom: 25px;
+}
+
+.sidebar-filters {
+  max-width: 180px;
+}
+
+.list-topic {
+  padding-top: 25px;
 }
 
 .topic-name {
@@ -46,18 +54,50 @@ hr {
 }
 
 .list-btn {
+  padding: 2px 5px;
+  color: var(--text-color);
+  font-size: var(--font-md);
   text-align: left;
-  padding: 5px 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+  border-radius: 6px;
 }
 
-.list-btn::before {
-  content: "# ";
+.list-btn .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-block;
 }
 
 #custom-lists-section {
   margin-bottom: 50px;
+}
+
+#add-topic {
+  font-size: 1rem;
+  border: 1px solid var(--hover-bg);
+  margin-bottom: 10px;
+  background-color: rgba(112, 128, 144, 0.1);
+  justify-content: center;
+
+}
+
+/* Hover effect */
+.list-btn:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Active state (when clicked) */
+.list-btn:active {
+  background-color: var(--primary-dark);
+  transform: scale(0.99);
 }

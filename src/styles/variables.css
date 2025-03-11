@@ -1,0 +1,26 @@
+:root {
+  --font-xxl: 2rem;     /* 32px (for ??) */
+  --font-xl: 1.5rem;     /* 24px (for headings) */
+  --font-lg: 1.25rem;    /* 20px (for section titles) */
+  --font-md: 1.125rem;   /* 18px (for regular text) */
+  --font-sm: 1rem;       /* 16px (for buttons, labels) */
+  --font-xs: 0.875rem;   /* 14px (for small text) */
+
+  /* Sidebar & Layout Colors */
+  --sidebar-background: #F5F6F8;  /* Sidebar background */
+  --list-selected-bg: #DFE2E7;  /* Background of selected list or button */
+
+  /* Text & Icon Colors */
+  --list-title-color: #1368C4;  /* List/Topic names inside the list */
+  --icon-default-color: #B8BABD; /* Default icon color */
+
+  /* Notification & Badges */
+  --badge-alert-bg: #F94876;  /* Background for notification number */
+
+  /* Borders & Dividers */
+  --divider-color: #E0E0E0;  /* General border/divider color */
+
+  --text-color: #434754;
+  --hover-bg: rgba(112, 128, 144, 0.2);
+  --primary-dark: #ccc;
+}
