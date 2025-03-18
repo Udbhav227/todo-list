@@ -37,13 +37,22 @@ header, #sidebar {
   padding-top: 25px;
 }
 
+.topic-name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .topic-name {
   font-size: 1.2rem;
   font-weight: bold; 
-}
-
-.topic-name::before {
-  content: '# ';
+  display: flex;
+  align-items: start;
+  gap: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px; /* Adjust as needed */
 }
 
 hr {
@@ -66,6 +75,8 @@ hr {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
   border-radius: 6px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .list-btn .icon {
@@ -73,6 +84,14 @@ hr {
   height: 20px;
   flex-shrink: 0;
   display: inline-block;
+}
+
+#add-btn {
+  width: 25px;
+  height: 25  px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+
 }
 
 #custom-lists-section {
@@ -85,11 +104,14 @@ hr {
   margin-bottom: 10px;
   background-color: rgba(112, 128, 144, 0.1);
   justify-content: center;
-
 }
 
 /* Hover effect */
 .list-btn:hover {
+  background-color: var(--hover-bg);
+}
+
+#add-btn:hover {
   background-color: var(--hover-bg);
 }
 
@@ -100,5 +122,5 @@ hr {
 }
 
 #add-topic:hover {
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(0, 55, 255, 0.1);
 }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Get Sh*t Done</title>
   </head>
   <body>
@@ -13,41 +13,65 @@
       </div>
     </header>
     <div id="sidebar">
+
       <div class="sidebar-filters">
-        <button class="filter-btn list-btn" id="add-topic"> Add New Topic</button>
-        <button class="filter-btn list-btn" id="filter-all"><img src="./assets/icons/star.svg" alt="" class="icon">All</button>
-        <button class="filter-btn list-btn" id="filter-today"><img src="./assets/icons/today.svg" alt="" class="icon">Today</button>
-        <button class="filter-btn list-btn" id="filter-week"><img src="./assets/icons/week.svg" alt="" class="icon">Week</button>
-        <button class="filter-btn list-btn" id="filter-imp"><img src="./assets/icons/imp.svg" alt="" class="icon">Important</button>
-        <button class="filter-btn list-btn" id="filter-completed"><img src="./assets/icons/task-done.svg" alt="" class="icon">Completed</button>
+
+        <button class="list-btn" id="add-topic">Add New Topic</button>
+
+        <button class="filter-btn list-btn" id="filter-all">
+          <img src="./assets/icons/star.svg" alt="" class="icon"/>
+          <span>All</span>
+        </button>
+
+        <button class="filter-btn list-btn" id="filter-today">
+          <img src="./assets/icons/today.svg" alt="" class="icon"/>
+          <span>Today</span>
+        </button>
+
+        <button class="filter-btn list-btn" id="filter-week">
+          <img src="./assets/icons/week.svg" alt="" class="icon"/>
+          <span>Week</span>
+        </button>
+
+        <button class="filter-btn list-btn" id="filter-imp">
+          <img src="./assets/icons/imp.svg" alt="" class="icon"/>
+          <span>Important</span>
+        </button>
+
+        <button class="filter-btn list-btn" id="filter-completed">
+          <img src="./assets/icons/task-done.svg" alt="task done" class="icon"/>
+          <span>Completed</span>
+        </button>
       </div>
+
       <div id="custom-lists-section">
         <!-- Custom lists will go here  -->
         <div class="list-topic" id="topic-work">
-          <div class="topic-name">Project</div>
-          <hr>
-          <div class="topic-lists" id="topic-project-lists">
-            <button class="list-btn" id="project1">Craft new project</button>
-            <button class="list-btn" id="project2">Craft another new project</button>
+
+          <div class="topic-name-container">
+            <div class="topic-name">
+              <img src="./assets/icons/topic.svg" alt="" class="icon"/>
+              <span>Travel</span>
+            </div>
+            <img src="./assets/icons/add.svg" alt="add new list" id="add-btn"/>
           </div>
-        </div>
-        <div class="list-topic" id="topic-work">
-          <div class="topic-name">Project</div>
-          <hr>
+
+          <hr />
+
           <div class="topic-lists" id="topic-project-lists">
-            <button class="list-btn" id="project1">Craft new project</button>
-            <button class="list-btn" id="project2">Craft another new project</button>
+            <button class="list-btn" id="project1">Dream Destinations</button>
+            <button class="list-btn" id="project2">
+              Adventure Bucket List
+            </button>
           </div>
+
         </div>
-        <div class="list-topic" id="topic-work">
-          <div class="topic-name">Project</div>
-          <hr>
-          <div class="topic-lists" id="topic-project-lists">
-            <button class="list-btn" id="project1">Craft new project</button>
-            <button class="list-btn" id="project2">Craft another new project</button>
-          </div>
-        </div>
+
+      </div>
+
     </div>
+
     <main id="main"></main>
+
   </body>
 </html>
